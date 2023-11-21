@@ -1,13 +1,9 @@
 import * as React from "react";
 import "./Task.css";
+import { ITask } from "../../store/actions";
 
 interface ITaskProps {
-  task: {
-    id: number;
-    description: string;
-    date: Date;
-    completed: boolean;
-  };
+  task: ITask;
 }
 
 const Task: React.FunctionComponent<ITaskProps> = ({ task }) => {
